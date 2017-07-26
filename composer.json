@@ -1,0 +1,12 @@
+{
+    "name": "nleonhardt/docker-test",
+    "authors": [
+        {
+            "name": "Nils Leonhardt",
+            "email": "nils@n11t.de"
+        }
+    ],
+    "require": {
+	    "silex/silex": "~2.0"
+    }
+}
