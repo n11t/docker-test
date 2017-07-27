@@ -1,5 +1,5 @@
 <?php
-namespace N11t;
+namespace N11t\DockerTest;
 
 use Silex\Application as SilexApplication;
 

@@ -7,8 +7,27 @@ services:
     volumes:
       - .:/app
       - ./docker/config/web/site.conf:/etc/nginx/conf.d/site.conf
+    networks:
+      - internal
   php:
-    image: php:7.1-fpm
+    build: ./docker/dockerfiles/php/
     volumes:
       - .:/app
       - ./docker/config/php/log.conf:/usr/local/etc/php-fpm.d/zz-log.conf
+    networks:
+      - internal
+      - database
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dev
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: dev
+    networks:
+     - database
+networks:
+  internal:
+    driver: bridge
+  database:
+    driver: bridge
