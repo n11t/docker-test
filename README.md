@@ -5,11 +5,13 @@ This repo is a playground to work with docker and php and to set up a dev-enviro
 ## Usage
 
 ### Start
-To bring up the container use [docker-compose](https://docs.docker.com/compose/) and migrate the database.
+To bring up the container use [docker-compose](https://docs.docker.com/compose/).
+Also you need to migrate the database and run the init-script.
 
 ```
 $ docker-compose up -d
 $ ./database.sh migrate
+$ docker-compose run -w /app php init.sh
 ```
 
 ### Website
