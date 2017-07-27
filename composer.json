@@ -7,11 +7,12 @@
         }
     ],
     "require": {
-	    "silex/silex": "~2.0"
+	    "silex/silex": "~2.0",
+        "phpunit/phpunit": "^6.2"
     },
     "autoload": {
 	    "psr-4": {
-		    "N11t\\": "src/"
+		    "N11t\\DockerTest\\": "src/"
 	    }
     }
 }
