@@ -14,6 +14,7 @@ services:
     volumes:
       - .:/app
       - ./docker/config/php/log.conf:/usr/local/etc/php-fpm.d/zz-log.conf
+      - ./docker/config/php/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
     networks:
       - internal
       - database
