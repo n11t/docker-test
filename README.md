@@ -40,6 +40,6 @@ $ ./tests.sh
 
 ## TODO
 
-1. End-2-End tests
-2. Database tests
+1. xDebug
+1. mail
 
