@@ -38,8 +38,13 @@ To run the unit-test use the tests.sh script
 $ ./tests.sh
 ```
 
+## xDebug
+
+To enable xDebug use `dev` as the session key. Current port is `9001`.
+
+If you want to change xDebug values see `docker/config/php/xdebug.ini`.
+
 ## TODO
 
-1. xDebug
 1. mail
 
